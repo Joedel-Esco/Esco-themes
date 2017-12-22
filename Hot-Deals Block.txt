@@ -1,0 +1,18 @@
+<h2 style="font-weight: bold; padding-top: 20px;">HOT DEALS</h2>
+<div class="promo-blocks">
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td class="tg-031e" style="padding: 0px 5px;" rowspan="2"><img style="width: 100%;" src="{{media url="wysiwyg/necktie.png"}}" alt="" /></td>
+<td class="tg-yw4l" style="padding: 0px 5px;" colspan="2"><img style="width: 100%;" src="{{media url="wysiwyg/essentialsfor_rainy_season.png"}}" alt="" /></td>
+</tr>
+<tr>
+<td class="tg-yw4l" style="padding: 0px 5px;"><img style="width: 100%;" src="{{media url="wysiwyg/esco_discount.png"}}" alt="" /></td>
+<td class="tg-yw4l" style="padding: 0px 5px;" rowspan="2"><img style="width: 100%;" src="{{media url="wysiwyg/raincoat.png"}}" alt="" /></td>
+</tr>
+<tr>
+<td class="tg-yw4l" style="padding: 0px 5px;" colspan="2"><img style="width: 100%;" src="{{media url="wysiwyg/esco_merchandise_group.png"}}" alt="" /></td>
+</tr>
+</tbody>
+</table>
+</div>

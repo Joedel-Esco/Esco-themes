@@ -1,0 +1,27 @@
+Create new Block
+
+Block Title - Footer Links
+Identifier - footerlinks
+
+
+Content
+
+<div class="footerlinks-block">
+<h2> Customer Care </h2>
+
+<p><a href="/esco-facts" target="_self"> FAQ </a></p>
+<p><a href="/esco-terms-and-conditions" target="_self"> Terms and Conditions </a></p>
+<p><a href="/esco-billing-and-shipping" target="_self"> Billing and Shipping </a></p>
+<p><a href="/contact" target="_self"> Contact Us </a></p>
+
+</div>
+
+<div class="footerlinks-block">
+<h2> Esco Merchandise </h2>
+
+<p><a href="/esco-about" target="_self"> About </a></p>
+<p><a href="/esco-news" target="_self"> News </a></p>
+<p><a href="/esco-partners" target="_self"> Partners </a></p>
+<p><a href="/esco-privacy-policy" target="_self"> Privacy Policy </a></p>
+
+</div>

@@ -7,15 +7,17 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-
+        <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">header links</argument>
+                </arguments>
+            </block>
+            <container name="header.left" htmlClass="pull-left" htmlTag="div">
+                <block class="Magento\Framework\View\Element\Template" name="testing" template="Magento_Theme::escoContact.phtml" />
+            </container>
+        </referenceContainer>
         <referenceContainer name="header-wrapper">
-            <referenceContainer name="header.panel">
-                <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
-                    <arguments>
-                        <argument name="css_class" xsi:type="string">header links</argument>
-                    </arguments>
-                </block>
-            </referenceContainer>
             <referenceBlock name="logo">
                 <arguments>
                     <argument name="logo_file" xsi:type="string">images/esco_logo.svg</argument>
@@ -32,6 +34,7 @@
         <!-- End -->
         <move element="top.search" destination="header.right" />
         <move element="navigation.sections" as="navigation-menu" destination="header.right" />
+        <referenceBlock name="footer_links" remove="true" />
         <referenceBlock name="copyright" remove="true" />
         <referenceBlock name="report.bugs" remove="true"/>
     </body>
