@@ -25,3 +25,22 @@ Content
 <p><a href="/esco-privacy-policy" target="_self"> Privacy Policy </a></p>
 
 </div>
+
+
+Create New Widget
+
+Type = CMS Static Block
+Design Theme = Escomerchandise Theme
+
+Storefront Properites
+Widget Title = Footer Links
+
+
+Layout Updates
+
+Display On = All Pages
+Container = CMS Footer Links
+
+Display On = All Product Types
+Container = CMS Footer Links
+
