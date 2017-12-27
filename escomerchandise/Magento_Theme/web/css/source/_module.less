@@ -159,11 +159,16 @@
         .lib-css(background-color, @footer__background-color);
         margin-top: auto;
         padding-bottom: 25px;
+        h2 {
+            color: #00467f;
+            font-weight: 500;
+        }
     }
 
     .footer {
         &.content {
-            border-top: 1px solid @border-color__base;
+            /*border-top: 1px solid @border-color__base;*/
+            background: rgba(209, 211, 212, 0.2);
             margin-top: 25px;
             padding-bottom: 25px;
             /*padding-top: 25px;*/
@@ -265,7 +270,7 @@
             .footerlinks-block {
                 display: inline-block;
                 position: relative;
-                margin-right: 45px;
+                margin-right: 35px;
             }
         }
     }
@@ -345,10 +350,22 @@
             }
 
             > .pull-left {
-                p {
-                    margin: 7px 0 0 15px;
-                    color: #fff;
+                > p {
+                    margin: 7px 0 0 5px;
+                    display: inline-block;
+                    color: #fff; 
                 }
+            }
+            > .pull-left:before {
+                position: relative;
+                vertical-align: middle;
+                background-image: url("../images/icons/header_phone_icon.png");
+                background-repeat: no-repeat;;
+                background-size: 25px 20px;
+                display: inline-block;
+                width: 25px;
+                height: 20px;
+                content: "";
             }
         }
 
@@ -396,10 +413,10 @@
     }
 
     .logo {
-        margin: 15px auto 25px 0;
+        margin: 15px auto 25px -25px;
 
         img {
-            max-height: inherit;
+            height: 75px;
         }
     }
 

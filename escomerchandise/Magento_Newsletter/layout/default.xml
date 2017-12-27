@@ -9,6 +9,12 @@
     <body>
         <referenceContainer name="footer" before="-">
                 <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-" template="Magento_Newsletter::escoSubcribe.phtml"/>
+            	<container name="esco.video" htmlClass="esco-video" htmlTag="div" before="footer.clear">
+                	<block class="Magento\Framework\View\Element\Template" name="escoVideo" template="Magento_Newsletter::escoCorporateVideo.phtml" />
+            	</container>
+                <container name="footer.clear" htmlClass="clear-footer" htmlTag="div" after="-">
+                    <block class="Magento\Framework\View\Element\Template" name="clearFooter" template="Magento_Newsletter::clearFooter.phtml" />
+                </container>
         </referenceContainer>
     </body>
 </page>
