@@ -22,8 +22,8 @@
                 <arguments>
                     <argument name="logo_file" xsi:type="string">images/esco_logo.svg</argument>
                     <argument name="logo_alt" xsi:type="string"> Escomerchandise </argument>
-                    <argument name="logo_img_width" xsi:type="number">200</argument>
-                    <argument name="logo_img_height" xsi:type="number">75</argument>
+                    <!-- <argument name="logo_img_width" xsi:type="number">200</argument> -->
+                    <!-- <argument name="logo_img_height" xsi:type="number">75</argument> -->
                 </arguments>
             </referenceBlock>
             <container name="header.right" htmlClass="pull-right" htmlTag="div" after="logo">

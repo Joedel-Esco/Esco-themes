@@ -100,7 +100,7 @@
             }
 
             .price-box {
-                margin: @indent__s 0 @indent__m;
+                margin: 0 0 @indent__m;
 
                 .price {
                     .lib-font-size(14);
@@ -188,6 +188,14 @@
 
             .tocart {
                 white-space: nowrap;
+                width: 190px;
+                background: #93d0ae;
+                border: 1px solid #4db5b3;
+            }
+
+            .tocart:hover {
+                background: #4db5b3 !important;
+                border: 1px solid #4db5b3 !important;
             }
         }
     }
@@ -255,7 +263,8 @@
                     display: table-cell;
                     padding: 0 @indent__l @indent__l 0;
                     vertical-align: top;
-                    width: 1%;
+                    /*width: 1%;*/
+                    width: 240px;
                 }
 
                 &-details {

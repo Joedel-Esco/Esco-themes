@@ -9,5 +9,6 @@
     <body>
         <referenceBlock name="catalog.compare.sidebar" remove="true"/>
         <referenceBlock name="product.info.addto" remove="true" />
+        <referenceBlock name="category.product.addto" remove="true" />
     </body>
 </page>
