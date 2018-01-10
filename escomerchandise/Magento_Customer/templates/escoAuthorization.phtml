@@ -15,6 +15,5 @@ if ($block->isLoggedIn()) {
 ?>
 <li class="authorization-link" data-label="<?= $block->escapeHtmlAttr(__('/')) ?>">
     <a <?= /* @noEscape */ $block->getLinkAttributes() ?><?= /* @noEscape */ $dataPostParam ?>>
-        <?= $block->escapeHtml($block->getLabel()) ?>
-    </a>
+    <?= $block->escapeHtml($block->getLabel()) ?></a>
 </li>

@@ -7,7 +7,7 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="footer" before="-">
+        <referenceContainer name="footer">
                 <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-" template="Magento_Newsletter::escoSubcribe.phtml"/>
             	<container name="esco.video" htmlClass="esco-video" htmlTag="div" before="footer.clear">
                 	<block class="Magento\Framework\View\Element\Template" name="escoVideo" template="Magento_Newsletter::escoCorporateVideo.phtml" />
