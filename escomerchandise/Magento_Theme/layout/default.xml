@@ -30,6 +30,14 @@
 
             </container>
         </referenceContainer>
+        <referenceBlock name="catalog.topnav">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="html-sitemap-link" ifconfig="htmlsitemap/general/enabled">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Sitemap</argument>
+                    <argument name="path" xsi:type="string">sitemap</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
         <!-- Moving the Minicart in Header Panel -->
         <move element="minicart" destination="header.panel" before="-"/>
         <!-- End -->

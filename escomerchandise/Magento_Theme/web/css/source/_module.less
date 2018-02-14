@@ -69,17 +69,23 @@
             padding-top: @indent__s;
             position: relative;
         }
+        &.panel {
+            background: #00467f;
+            padding: 15px;
+        }
     }
 
     .logo {
         float: left;
-        margin: 15px 0 @indent__s @indent__xl;
+        margin: 15px 0 @indent__s 27%;
         max-width: 50%;
         position: relative;
         z-index: 5;
 
         img {
             display: block;
+            width: 250px;
+            height: 100px;
         }
 
         .page-print & {
@@ -116,7 +122,12 @@
     .pull-left {
         display: inline-block;
         position: relative;
-        margin-top: 17px;
+        margin-top: 0px;
+        p {
+            margin: -5px 0 0 0;
+            color: #fff;
+            font-weight: 700;
+        }
     }
 
 
@@ -178,8 +189,8 @@
         &.content {
             /*border-top: 1px solid @border-color__base;*/
             /*background: rgba(209, 211, 212, 0.2);*/
-            margin-top: 25px;
-            padding-bottom: 25px;
+            /*margin-top: 25px;*/
+            padding: 20px;
             /*padding-top: 25px;*/
 
             ul {
@@ -542,11 +553,6 @@
 
     .logo {
         margin: 15px auto 20px -25px;
-
-        img {
-            width: 250px;
-            height: 100px;
-        }
     }
 
     .footer {
