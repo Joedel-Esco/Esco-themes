@@ -1,0 +1,48 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+
+?>
+<div class="block newsletter">
+    <div class="subscribe">
+        <h2> Subscribe Here! </h2>
+        <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
+        <div class="content">
+            <form class="form subscribe"
+                novalidate
+                action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+                method="post"
+                data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+                id="newsletter-validate-detail">
+                <div class="field newsletter">
+                    <label class="label" for="newsletter"><span><?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?></span></label>
+                    <div class="control">
+                        <input name="email" type="email" id="newsletter"
+                                    placeholder="<?= $block->escapeHtmlAttr(__('Enter your email address')) ?>"
+                                    data-validate="{required:true, 'validate-email':true}"/>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="action subscribe primary" title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>" type="submit">
+                        <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="follow-us">
+        <h2> Follow Us! </h2>
+        <a href="http://www.facebook.com/EscoGlobal" target="_blank"><div class="fb-icon socialIcons"></div></a>
+        <a href="http://www.twitter.com/EscoGlobal" target="_blank"><div class="twitter-icon socialIcons"></div></a>
+        <a href="http://www.youtube.com/user/escoglobal" target="_blank"><div class="yt-icon socialIcons"></div></a>
+        <a href="http://www.linkedin.com/in/escoglobal" target="_blank"><div class="ld-icon socialIcons"></div></a>
+        <a href="http://www.instagram.com/escoglobal" target="_blank"><div class="ig-icon socialIcons"></div></a>
+        <a href="http://www.pinterest.com/EscoGlobal" target="_blank"><div class="pt-icon socialIcons"></div></a>
+    </div>
+</div>

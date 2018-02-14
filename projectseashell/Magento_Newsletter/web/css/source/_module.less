@@ -1,0 +1,260 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    //  Newsletter subscription
+    .block.newsletter {
+        padding-top:20px;
+        margin-bottom: 0px !important;
+        float: right;
+
+        .form.subscribe {
+            display: table;
+            width: 100%;
+        }
+
+        .fieldset {
+            display: table-cell;
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+        }
+
+        .field {
+            margin: 0;
+
+            .control {
+                .lib-icon-font(
+                @icon-envelope,
+                @_icon-font-size: 35px,
+                @_icon-font-line-height: 33px,
+                @_icon-font-color: @form-element-input-placeholder__color
+                );
+                display: block;
+
+                &:before {
+                    position: absolute;
+                }
+            }
+        }
+
+        input {
+            padding-left: 35px;
+        }
+
+        .title {
+            display: none;
+        }
+
+        .label {
+            &:extend(.abs-visually-hidden all);
+        }
+
+        .actions {
+            display: table-cell;
+            vertical-align: top;
+            width: 1%;
+        }
+
+        .action.subscribe {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            margin-left: -1px;
+        }
+
+        // Added CSS
+        .esco-video {
+            position: relative;
+            width: 25%;
+            float: right;
+        }
+
+        .socialIcons {
+            display:inline-block;
+            position:relative;
+            margin: 0 6px;
+            cursor: pointer;
+        }
+
+        .fb-icon {
+            width: 50px;
+            height: 50px;
+            background: url("../images/socialIcons/Active/Facebook.png") no-repeat;
+            background-size: 50px;
+        }
+        .fb-icon:hover {
+            background: url("../images/socialIcons/Hover/Facebook.png") no-repeat;
+            background-size: 50px;
+        }
+
+        .twitter-icon {
+            width: 50px;
+            height: 50px;
+            background: url("../images/socialIcons/Active/Twitter.png") no-repeat;
+            background-size: 50px;
+        }
+        .twitter-icon:hover {
+            background: url("../images/socialIcons/Hover/Twitter.png") no-repeat;
+            background-size: 50px;
+        }
+
+        .yt-icon {
+            width: 50px;
+            height: 50px;
+            background: url("../images/socialIcons/Active/YouTube.png") no-repeat;
+            background-size: 50px;
+        }
+        .yt-icon:hover {
+            background: url("../images/socialIcons/Hover/YouTube.png") no-repeat;
+            background-size: 50px;
+        } 
+
+        .ld-icon {
+            width: 50px;
+            height: 50px;
+            background: url("../images/socialIcons/Active/Linkedin.png") no-repeat;
+            background-size: 50px;
+        }
+        .ld-icon:hover {
+            background: url("../images/socialIcons/Hover/Linkedin.png") no-repeat;
+            background-size: 50px;
+        }    
+
+        .ig-icon {
+            width: 50px;
+            height: 50px;
+            background: url("../images/socialIcons/Active/Instagram.png") no-repeat;
+            background-size: 50px;
+        }
+        .ig-icon:hover {
+            background: url("../images/socialIcons/Hover/Instagram.png") no-repeat;
+            background-size: 50px;
+        }
+
+        .pt-icon {
+            width: 50px;
+            height: 50px;
+            background: url("../images/socialIcons/Active/Pinterest.png") no-repeat;
+            background-size: 50px;
+        }
+        .pt-icon:hover {
+            background: url("../images/socialIcons/Hover/Pinterest.png") no-repeat;
+            background-size: 50px;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .block.newsletter {
+        width: 35%;
+
+        .field {
+            margin-right: 5px;
+
+            .control {
+                width: 100%;
+            }
+        }
+
+        .action.subscribe {
+            border-radius: 3px;
+        }
+    }
+
+    .esco-video {
+        position: relative;
+        width: 25%;
+        float: right;
+    }
+
+    .follow-us {
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .socialIcons {
+        display:inline-block;
+        position:relative;
+        margin: 0 6px;
+        cursor: pointer;
+    }
+
+    .fb-icon {
+        width: 50px;
+        height: 50px;
+        background: url("../images/socialIcons/Active/Facebook.png") no-repeat;
+        background-size: 50px;
+    }
+    .fb-icon:hover {
+        background: url("../images/socialIcons/Hover/Facebook.png") no-repeat;
+        background-size: 50px;
+    }
+
+    .twitter-icon {
+        width: 50px;
+        height: 50px;
+        background: url("../images/socialIcons/Active/Twitter.png") no-repeat;
+        background-size: 50px;
+    }
+    .twitter-icon:hover {
+        background: url("../images/socialIcons/Hover/Twitter.png") no-repeat;
+        background-size: 50px;
+    }
+
+    .yt-icon {
+        width: 50px;
+        height: 50px;
+        background: url("../images/socialIcons/Active/YouTube.png") no-repeat;
+        background-size: 50px;
+    }
+    .yt-icon:hover {
+        background: url("../images/socialIcons/Hover/YouTube.png") no-repeat;
+        background-size: 50px;
+    } 
+
+    .ld-icon {
+        width: 50px;
+        height: 50px;
+        background: url("../images/socialIcons/Active/Linkedin.png") no-repeat;
+        background-size: 50px;
+    }
+    .ld-icon:hover {
+        background: url("../images/socialIcons/Hover/Linkedin.png") no-repeat;
+        background-size: 50px;
+    }    
+
+    .ig-icon {
+        width: 50px;
+        height: 50px;
+        background: url("../images/socialIcons/Active/Instagram.png") no-repeat;
+        background-size: 50px;
+    }
+    .ig-icon:hover {
+        background: url("../images/socialIcons/Hover/Instagram.png") no-repeat;
+        background-size: 50px;
+    }
+
+    .pt-icon {
+        width: 50px;
+        height: 50px;
+        background: url("../images/socialIcons/Active/Pinterest.png") no-repeat;
+        background-size: 50px;
+    }
+    .pt-icon:hover {
+        background: url("../images/socialIcons/Hover/Pinterest.png") no-repeat;
+        background-size: 50px;
+    }      
+}

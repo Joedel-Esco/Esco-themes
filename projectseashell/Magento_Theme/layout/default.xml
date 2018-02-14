@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">header links</argument>
+                </arguments>
+            </block>
+            <container name="header.left" htmlClass="pull-left" htmlTag="div">
+                <block class="Magento\Framework\View\Element\Template" name="testing" template="Magento_Theme::seashellContact.phtml" />
+            </container>
+        </referenceContainer>
+        <referenceContainer name="header-wrapper">
+            <referenceBlock name="logo">
+                <arguments>
+                    <argument name="logo_file" xsi:type="string">images/Philippine_SeaShells_Logo.svg</argument>
+                    <argument name="logo_alt" xsi:type="string"> philippinesseashell </argument>
+                    <!-- <argument name="logo_img_width" xsi:type="number">200</argument> -->
+                    <!-- <argument name="logo_img_height" xsi:type="number">75</argument> -->
+                </arguments>
+            </referenceBlock>
+            <container name="header.right" htmlClass="main-navigation" htmlTag="div" after="logo">
+                    
+            </container>
+        </referenceContainer>
+        <!-- Moving the Minicart in Header Panel -->
+        <move element="minicart" destination="header.panel" before="-"/>
+        <!-- End -->
+        <move element="top.search" name="search-top" destination="header.right" before="-" />
+        <move element="navigation.sections" as="navigation-menu" destination="header.right" after="search-top"/>
+        <move element="copyright" destination="footer" after="-" />
+
+        <referenceBlock name="footer_links" remove="true" />
+        <!-- <referenceBlock name="copyright" remove="true" /> -->
+        <referenceBlock name="report.bugs" remove="true"/>
+    </body>
+</page>
