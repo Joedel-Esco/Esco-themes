@@ -118,6 +118,7 @@
         @_icon-font-color-active: @minicart-icons-color
         );
         float: right;
+        margin-top:10px;
 
         .block-minicart {
             .lib-css(padding, 25px @minicart__padding-horizontal);
@@ -397,6 +398,7 @@
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
     .minicart-wrapper .block-minicart {
         width: 290px;
+        margin-top: @indent__s;
     }
 }
 
@@ -413,6 +415,7 @@
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .minicart-wrapper {
         margin-left: 13px;
+        margin-top: 0px;
         .block-minicart {
             right: -15px;
             width: 390px;

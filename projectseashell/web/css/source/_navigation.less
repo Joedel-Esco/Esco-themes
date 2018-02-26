@@ -7,7 +7,7 @@
 //  Variables
 //  _____________________________________________
 
-@active-nav-indent: 54px;
+@active-nav-indent: 150px;
 
 //
 //  Common
@@ -75,6 +75,52 @@
                     );
                 }
             }
+        }
+    }
+
+    .nav.item.ui-menu-item {
+        border-top: 1px solid #d1d1d1;
+        font-size: 1.6rem;
+    }
+
+    .nav.item.ui-menu-item > a {
+        font-weight: 700;
+        padding: 8px 40px 8px 15px;
+        text-transform: uppercase;
+        word-wrap: break-word;
+    }
+
+    .nav.item.ui-menu-item > a:hover {
+        text-decoration: none;
+    }
+
+    .nav.item.current {
+        color: #575757;
+        border-color: #ff5501;
+        border-style: solid;
+        border-width: 0 0 0 8px;
+        border-top: 1px solid #d1d1d1;
+        font-size: 1.6rem;
+        padding: 8px 40px 8px 7px; 
+    }
+
+    .nav.item.current > strong {
+        font-weight: 700;
+        text-transform: uppercase;
+        word-wrap: break-word;
+    }
+
+    #block-collapsible-nav {
+        > ul li.nav.item.current {
+            border: none;
+            font-size: 1.3rem;
+            padding: 0px;
+            color: #00457D;
+        }
+
+        > ul li.nav.item.current > strong {
+            text-transform: uppercase;
+            word-wrap: break-word;
         }
     }
 
@@ -204,6 +250,7 @@
             .lib-css(box-shadow, @_shadow, 1);
             left: 0;
             z-index: 99;
+            background: #f5f5f5;
         }
 
         .nav-toggle {
@@ -319,6 +366,48 @@
             }
 
             
+        }
+    }
+
+    .nav.item.ui-menu-item, .nav.item {
+        display: inline-block;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .nav.item.ui-menu-item > a, .nav.item > a {
+        color: #00457D;
+        text-decoration: none;
+    }
+
+    .nav.item.ui-menu-item > a:hover, .nav.item > a:hover {
+        color: #006bb4;
+        text-decoration: none;
+    }
+
+    .nav.item.current {
+        display: inline-block;
+        color: #00457D;
+        font-size: 16.7px; 
+    }
+
+    .nav.item.current > strong {
+        border-bottom: 3px solid #fff;
+        padding: 0px 12px 10px;
+    }
+
+    #block-collapsible-nav {
+        > ul li.nav.item.current {
+            font-size: 1.3rem;
+            color: #00457D;
+            text-decoration: underline;
+        }
+
+        > ul li.nav.item.current > strong {
+            border: none;
+            text-transform: uppercase;
+            word-wrap: break-word;
+            padding: 0px;
         }
     }
 

@@ -7,8 +7,9 @@
 //  Variables
 //  _____________________________________________
 
-@checkout-progress-bar__font-size: 18px;
-@checkout-progress-bar__font-weight: @font-weight__light;
+@checkout-progress-bar__font-size: 20px;
+//@checkout-progress-bar__font-weight: @font-weight__light;
+@checkout-progress-bar__font-weight: 500;
 @checkout-progress-bar__margin: @indent__base;
 
 @checkout-progress-bar-item__background-color: @color-gray-middle1;
@@ -16,7 +17,8 @@
 @checkout-progress-bar-item__color: @primary__color;
 @checkout-progress-bar-item__margin: @indent__s;
 @checkout-progress-bar-item__width: 185px;
-@checkout-progress-bar-item__active__background-color: @color-orange-red1;
+// @checkout-progress-bar-item__active__background-color: @color-orange-red1; #1979c3
+@checkout-progress-bar-item__active__background-color: #1979c3;
 @checkout-progress-bar-item__complete__color: @link__color;
 
 @checkout-progress-bar-item-element__height: @checkout-progress-bar-item-element__width;
@@ -86,7 +88,7 @@
             word-wrap: break-word;
 
             .lib-typography(
-            @_color: @checkout-progress-bar-item__background-color,
+            //@_color: @checkout-progress-bar-item__background-color,
             @_font-family: false,
             @_font-size: @checkout-progress-bar__font-size,
             @_font-style: false,
